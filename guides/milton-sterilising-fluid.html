@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Milton Disinfecting Fluid — Use Guide | Gellings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a2340;
+    --navy-soft:#2b3660;
+    --teal:#54b2ac;
+    --teal-deep:#3a8d88;
+    --teal-pale:#e8f4f3;
+    --brass:#c9a35c;
+    --brass-pale:#f7eeda;
+    --paper:#f6f4ef;
+    --card:#ffffff;
+    --ink:#1a2340;
+    --ink-soft:#5a6178;
+    --line:#e3dfd4;
+    --caution:#a8452e;
+    --caution-pale:#f8e9e4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+  }
+  a{color:inherit;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 6vw;}
+
+  header.site{
+    background:var(--navy);
+    color:#fff;
+    padding:22px 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .logo{font-family:'Fraunces',serif;font-size:22px;font-weight:600;}
+  .logo span{color:var(--teal);}
+  header.site nav a{text-decoration:none;color:#cfd3e2;font-size:14px;margin-left:28px;}
+  header.site nav a:hover{color:#fff;}
+
+  .crumb{
+    padding:20px 6vw 0;
+    font-size:13px;
+  }
+  .crumb a{color:var(--teal-deep);text-decoration:none;font-weight:600;}
+  .crumb a:hover{text-decoration:underline;}
+  .crumb span{color:var(--ink-soft);}
+
+  .hero{
+    padding:28px 6vw 40px;
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:36px;
+    max-width:1000px;
+    margin:0 auto;
+    align-items:start;
+  }
+  .hero .shot{
+    background:#efece3;
+    border-radius:6px;
+    padding:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero .shot img{width:100%;height:auto;display:block;}
+  .hero .shot span{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:44px;
+    color:var(--teal);
+    letter-spacing:-0.02em;
+  }
+  .hero .shot::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:6px;
+  }
+  .hero .eyebrow{
+    color:var(--teal-deep);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .hero h1{
+    font-size:clamp(28px,3.6vw,38px);
+    color:var(--navy);
+    line-height:1.15;
+  }
+  .hero .sub{
+    margin-top:8px;
+    font-size:16px;
+    color:var(--ink-soft);
+  }
+  .facts{
+    margin-top:18px;
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    font-size:13px;
+  }
+  .facts div{color:var(--ink-soft);}
+  .facts b{display:block;color:var(--navy);font-size:15px;font-weight:600;}
+
+  section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 6vw;
+  }
+  .band{padding:36px 6vw;}
+  .band.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+  .lede{font-size:16px;color:var(--ink-soft);max-width:62ch;}
+
+  .safety{
+    background:var(--caution-pale);
+    border:1px solid #e6bfae;
+    border-radius:6px;
+    padding:22px 24px;
+    margin-top:28px;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .safety h2{font-size:17px;color:var(--caution);margin-bottom:10px;}
+  .safety ul{margin:0;padding-left:20px;font-size:14.5px;color:#5a3226;}
+  .safety li{margin-bottom:6px;}
+  .safety li:last-child{margin-bottom:0;}
+
+  h2.section-title{
+    font-size:26px;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .section-intro{color:var(--ink-soft);font-size:15px;margin-bottom:26px;max-width:62ch;}
+
+  .use-block{
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--line);
+  }
+  .use-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .use-block h3{
+    font-size:19px;
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:16px;
+  }
+  .use-block h3 .dot{
+    width:9px;height:9px;border-radius:50%;background:var(--teal);flex-shrink:0;
+  }
+  ol.steps{
+    margin:0;
+    padding:0;
+    list-style:none;
+    counter-reset:step;
+  }
+  ol.steps li{
+    counter-increment:step;
+    position:relative;
+    padding-left:38px;
+    margin-bottom:12px;
+    font-size:15px;
+    color:var(--ink);
+  }
+  ol.steps li:last-child{margin-bottom:0;}
+  ol.steps li::before{
+    content:counter(step);
+    position:absolute;
+    left:0;top:0;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--brass-pale);
+    color:var(--navy);
+    font-size:12.5px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rate{
+    display:inline-block;
+    background:var(--teal-pale);
+    color:var(--teal-deep);
+    font-weight:600;
+    padding:1px 7px;
+    border-radius:4px;
+    font-size:13.5px;
+  }
+
+  table.spec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+    max-width:640px;
+  }
+  table.spec tr{border-bottom:1px solid var(--line);}
+  table.spec tr:last-child{border-bottom:none;}
+  table.spec td{padding:11px 4px;}
+  table.spec td:first-child{color:var(--ink-soft);width:44%;}
+  table.spec td:last-child{color:var(--navy);font-weight:500;}
+
+  .compat{
+    margin-top:22px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+    max-width:62ch;
+  }
+  .compat b{color:var(--navy);}
+
+  .download{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    background:var(--navy);
+    color:#fff;
+    border-radius:8px;
+    padding:28px 30px;
+    margin:44px auto 0;
+    max-width:1000px;
+  }
+  .download h3{color:#fff;font-size:19px;margin-bottom:6px;}
+  .download p{margin:0;color:#c7cbdd;font-size:14px;}
+  .download a.btn{
+    background:var(--teal);
+    color:var(--navy);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    padding:12px 22px;
+    border-radius:5px;
+    white-space:nowrap;
+  }
+  .download a.btn:hover{background:#68c0ba;}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:28px 6vw 44px;
+    font-size:13px;
+    color:var(--ink-soft);
+    max-width:1000px;
+    margin:44px auto 0;
+  }
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:120px 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="logo">Gellings<span>.</span></div>
+  <nav>
+    <a href="https://www.gellings.im/">gellings.im</a>
+    <a href="index.html">Guides</a>
+  </nav>
+</header>
+
+<div class="crumb"><a href="index.html">Product Guides</a> <span>/ Milton Disinfecting Fluid</span> <span>· <a href="https://www.gellings.im/prod_cat/C_specialist-cleaning-industrial_392.asp">shop specialist cleaning</a></span></div>
+
+<div class="hero">
+  <div class="shot"><img src="data:image/jpeg;base64,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" alt="Milton Disinfecting Fluid, Professional"></div>
+  <div>
+    <div class="eyebrow">Professional disinfecting fluid · 5L</div>
+    <h1>Milton Disinfecting Fluid</h1>
+    <div class="sub">Sterilising solution for equipment &amp; surfaces</div>
+    <div class="facts">
+      <div><b>15 min</b>cold water sterilising</div>
+      <div><b>No rinse needed</b>on sterilised items</div>
+      <div><b>24 hours</b>solution stays effective</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <p class="lede">Milton Disinfecting Fluid is a sodium hypochlorite-based disinfectant for hospitals and professional kitchens — work surfaces, floors, walls and utensils. It kills bacteria, fungi and viruses. No heating and no rinsing needed once items come out of solution.</p>
+
+  <div class="safety">
+    <h2>Before you start</h2>
+    <ul>
+      <li>Do not use on metal — it can cause corrosion.</li>
+      <li>Never mix with other products — this can release toxic chlorine gas.</li>
+      <li>Avoid contact with eyes and skin; splashes may discolour fabric.</li>
+      <li>Use a non-metallic container for the solution.</li>
+      <li>Full safety information is in the product's Safety Data Sheet — ask us if you need a copy.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="band alt">
+<section style="padding:0;">
+  <h2 class="section-title">How to use it</h2>
+  <p class="section-intro">Make up a fresh solution and renew it every 24 hours.</p>
+
+  <div class="use-block">
+    <h3><span class="dot"></span>Sterilising equipment &amp; utensils</h3>
+    <ol class="steps">
+      <li>Wash items thoroughly in warm, soapy water first, then rinse with cold water.</li>
+      <li>Fill a non-metallic container with 5L of cold water and add <span class="rate">30ml (one capful)</span> of Milton fluid.</li>
+      <li>Fully submerge the items, making sure there are no trapped air bubbles.</li>
+      <li>Leave for 15 minutes. No need to rinse — items are ready to use straight away.</li>
+      <li>Items can stay in the solution until needed. Renew the solution every 24 hours.</li>
+    </ol>
+  </div>
+
+  <div class="use-block">
+    <h3><span class="dot"></span>Disinfecting surfaces</h3>
+    <ol class="steps">
+      <li>Fill a container with 5L of cold water and add <span class="rate">90ml (three capfuls)</span> of Milton fluid.</li>
+      <li>Make sure the surface is clean first, then apply with a cloth, fully wetting the surface.</li>
+      <li>Leave for 5–15 minutes, then rinse — no need to rinse surfaces in direct food contact.</li>
+      <li>The solution stays effective for 24 hours.</li>
+    </ol>
+  </div>
+
+</section>
+</div>
+
+<section class="band">
+  <h2 class="section-title">Product details</h2>
+  <table class="spec">
+    <tr><td>Format</td><td>5L</td></tr>
+    <tr><td>Active ingredient</td><td>Sodium hypochlorite</td></tr>
+    <tr><td>Solution life</td><td>24 hours once made up</td></tr>
+  </table>
+  <p class="compat"><b>Suitable for:</b> feeding equipment, utensils, non-metallic surfaces and items. Not for metal surfaces.</p>
+</section>
+
+<div class="wrap">
+<div class="download">
+  <div>
+    <h3>Want this as a printable sheet?</h3>
+    <p>Download a PDF copy to keep by the equipment or hand to staff.</p>
+  </div>
+  <a class="btn" href="milton-sterilising-fluid.pdf" download>Download PDF</a>
+</div>
+</div>
+
+<footer>
+  Gellings · Unit 4 Kirby Farm Industrial Estate, Braddan, Isle of Man · This guide is a general how-to — always check the product label and Safety Data Sheet before use.
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
