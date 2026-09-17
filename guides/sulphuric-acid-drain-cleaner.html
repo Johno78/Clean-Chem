@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sulphuric Acid Drain Cleaner — Use Guide | Gellings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a2340;
+    --navy-soft:#2b3660;
+    --teal:#54b2ac;
+    --teal-deep:#3a8d88;
+    --teal-pale:#e8f4f3;
+    --brass:#c9a35c;
+    --brass-pale:#f7eeda;
+    --paper:#f6f4ef;
+    --card:#ffffff;
+    --ink:#1a2340;
+    --ink-soft:#5a6178;
+    --line:#e3dfd4;
+    --caution:#a8452e;
+    --caution-pale:#f8e9e4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+  }
+  a{color:inherit;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 6vw;}
+
+  header.site{
+    background:var(--navy);
+    color:#fff;
+    padding:22px 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .logo{font-family:'Fraunces',serif;font-size:22px;font-weight:600;}
+  .logo span{color:var(--teal);}
+  header.site nav a{text-decoration:none;color:#cfd3e2;font-size:14px;margin-left:28px;}
+  header.site nav a:hover{color:#fff;}
+
+  .crumb{
+    padding:20px 6vw 0;
+    font-size:13px;
+  }
+  .crumb a{color:var(--teal-deep);text-decoration:none;font-weight:600;}
+  .crumb a:hover{text-decoration:underline;}
+  .crumb span{color:var(--ink-soft);}
+
+  .hero{
+    padding:28px 6vw 40px;
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:36px;
+    max-width:1000px;
+    margin:0 auto;
+    align-items:start;
+  }
+  .hero .shot{
+    background:#efece3;
+    border-radius:6px;
+    padding:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero .shot img{width:100%;height:auto;display:block;}
+  .hero .shot span{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:44px;
+    color:var(--teal);
+    letter-spacing:-0.02em;
+  }
+  .hero .shot::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:6px;
+  }
+  .hero .eyebrow{
+    color:var(--teal-deep);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .hero h1{
+    font-size:clamp(28px,3.6vw,38px);
+    color:var(--navy);
+    line-height:1.15;
+  }
+  .hero .sub{
+    margin-top:8px;
+    font-size:16px;
+    color:var(--ink-soft);
+  }
+  .facts{
+    margin-top:18px;
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    font-size:13px;
+  }
+  .facts div{color:var(--ink-soft);}
+  .facts b{display:block;color:var(--navy);font-size:15px;font-weight:600;}
+
+  section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 6vw;
+  }
+  .band{padding:36px 6vw;}
+  .band.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+  .lede{font-size:16px;color:var(--ink-soft);max-width:62ch;}
+
+  .safety{
+    background:var(--caution-pale);
+    border:1px solid #e6bfae;
+    border-radius:6px;
+    padding:22px 24px;
+    margin-top:28px;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .safety h2{font-size:17px;color:var(--caution);margin-bottom:10px;}
+  .safety ul{margin:0;padding-left:20px;font-size:14.5px;color:#5a3226;}
+  .safety li{margin-bottom:6px;}
+  .safety li:last-child{margin-bottom:0;}
+
+  h2.section-title{
+    font-size:26px;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .section-intro{color:var(--ink-soft);font-size:15px;margin-bottom:26px;max-width:62ch;}
+
+  .use-block{
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--line);
+  }
+  .use-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .use-block h3{
+    font-size:19px;
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:16px;
+  }
+  .use-block h3 .dot{
+    width:9px;height:9px;border-radius:50%;background:var(--teal);flex-shrink:0;
+  }
+  ol.steps{
+    margin:0;
+    padding:0;
+    list-style:none;
+    counter-reset:step;
+  }
+  ol.steps li{
+    counter-increment:step;
+    position:relative;
+    padding-left:38px;
+    margin-bottom:12px;
+    font-size:15px;
+    color:var(--ink);
+  }
+  ol.steps li:last-child{margin-bottom:0;}
+  ol.steps li::before{
+    content:counter(step);
+    position:absolute;
+    left:0;top:0;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--brass-pale);
+    color:var(--navy);
+    font-size:12.5px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rate{
+    display:inline-block;
+    background:var(--teal-pale);
+    color:var(--teal-deep);
+    font-weight:600;
+    padding:1px 7px;
+    border-radius:4px;
+    font-size:13.5px;
+  }
+
+  table.spec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+    max-width:640px;
+  }
+  table.spec tr{border-bottom:1px solid var(--line);}
+  table.spec tr:last-child{border-bottom:none;}
+  table.spec td{padding:11px 4px;}
+  table.spec td:first-child{color:var(--ink-soft);width:44%;}
+  table.spec td:last-child{color:var(--navy);font-weight:500;}
+
+  .compat{
+    margin-top:22px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+    max-width:62ch;
+  }
+  .compat b{color:var(--navy);}
+
+  .download{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    background:var(--navy);
+    color:#fff;
+    border-radius:8px;
+    padding:28px 30px;
+    margin:44px auto 0;
+    max-width:1000px;
+  }
+  .download h3{color:#fff;font-size:19px;margin-bottom:6px;}
+  .download p{margin:0;color:#c7cbdd;font-size:14px;}
+  .download a.btn{
+    background:var(--teal);
+    color:var(--navy);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    padding:12px 22px;
+    border-radius:5px;
+    white-space:nowrap;
+  }
+  .download a.btn:hover{background:#68c0ba;}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:28px 6vw 44px;
+    font-size:13px;
+    color:var(--ink-soft);
+    max-width:1000px;
+    margin:44px auto 0;
+  }
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:120px 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="logo">Gellings<span>.</span></div>
+  <nav>
+    <a href="https://www.gellings.im/">gellings.im</a>
+    <a href="index.html">Guides</a>
+  </nav>
+</header>
+
+<div class="crumb"><a href="index.html">Product Guides</a> <span>/ Sulphuric Acid Drain Cleaner</span> <span>· <a href="https://www.gellings.im/prod_cat/C_specialist-cleaning-industrial_392.asp">shop specialist cleaning</a></span></div>
+
+<div class="hero">
+  <div class="shot"><img src="data:image/jpeg;base64,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" alt="Sulphuric Acid Drain Cleaner, full industrial strength"></div>
+  <div>
+    <div class="eyebrow">Concentrated sulphuric acid · 1L</div>
+    <h1>Sulphuric Acid Drain Cleaner</h1>
+    <div class="sub">Outdoor drain &amp; toilet unblocker — trade use only</div>
+    <div class="facts">
+      <div><b>Highly corrosive</b>severe burns risk</div>
+      <div><b>Acid to water</b>never reverse the order</div>
+      <div><b>Outdoor drains only</b>not for septic tanks</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <p class="lede">Sulphuric Acid Drain Cleaner is a highly concentrated acid formulation (typically 90%+ sulphuric acid) for rapidly clearing stubborn blockages in outdoor drains, pipes and toilets. It's a serious hazard if handled carelessly — read this guide fully before use, and only use it if you're trained and equipped to do so safely.</p>
+
+  <div class="safety">
+    <h2>Before you start — this one matters</h2>
+    <ul>
+      <li><b>Highly corrosive.</b> Causes severe skin burns and serious eye damage. Wear chemical-resistant gloves, eye/face protection and protective clothing.</li>
+      <li><b>Trade and professional use only</b> — this product is regulated and restricted to trade users.</li>
+      <li>Outdoor drains, pipes and toilets only. <b>Not suitable for septic tanks.</b></li>
+      <li>Only use with plastic plumbing — it can damage chrome, stainless steel and galvanised pipework.</li>
+      <li>If diluting, always add the acid to water, never water to acid — reversing this can cause violent spitting and splashing.</li>
+      <li>Clear the area around the drain and cover any nearby metal fittings before use.</li>
+      <li>Never mix with other chemicals, especially bleach — this can release toxic gas.</li>
+      <li>Work in a well-ventilated area.</li>
+      <li>Full safety information is in the product's Safety Data Sheet — ask us if you need a copy.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="band alt">
+<section style="padding:0;">
+  <h2 class="section-title">How to use it</h2>
+  <p class="section-intro">Used neat, in small amounts, poured slowly and carefully.</p>
+
+  <div class="use-block">
+    <h3><span class="dot"></span>Clearing a blocked outdoor drain, pipe or toilet</h3>
+    <ol class="steps">
+      <li>Put on full PPE — chemical-resistant gloves, eye/face protection and protective clothing.</li>
+      <li>Ensure the area is well ventilated and clear of people and pets.</li>
+      <li>Pour a small amount of the product slowly and directly into the blocked drain, pipe or toilet — do not rush this step.</li>
+      <li>Leave for 10–15 minutes to dissolve the blockage.</li>
+      <li>Flush thoroughly with plenty of cold water.</li>
+      <li>Repeat only if necessary, and never exceed the amount needed to clear the blockage.</li>
+    </ol>
+  </div>
+
+</section>
+</div>
+
+<section class="band">
+  <h2 class="section-title">Product details</h2>
+  <table class="spec">
+    <tr><td>Format</td><td>1L</td></tr>
+    <tr><td>Composition</td><td>Concentrated sulphuric acid with corrosion inhibitor</td></tr>
+    <tr><td>Classification</td><td>Corrosive — regulated explosives precursor product</td></tr>
+  </table>
+  <p class="compat"><b>Suitable for:</b> outdoor drains, pipes and toilets with plastic plumbing. Not for septic tanks or metal pipework.</p>
+</section>
+
+<div class="wrap">
+<div class="download">
+  <div>
+    <h3>Want this as a printable sheet?</h3>
+    <p>Download a PDF copy to keep by the equipment or hand to staff.</p>
+  </div>
+  <a class="btn" href="sulphuric-acid-drain-cleaner.pdf" download>Download PDF</a>
+</div>
+</div>
+
+<footer>
+  Gellings · Unit 4 Kirby Farm Industrial Estate, Braddan, Isle of Man · This guide is a general how-to — always check the product label and Safety Data Sheet before use.
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
