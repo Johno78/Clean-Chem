@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flash Pro Spray Cleaner With Bleach — Use Guide | Gellings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a2340;
+    --navy-soft:#2b3660;
+    --teal:#54b2ac;
+    --teal-deep:#3a8d88;
+    --teal-pale:#e8f4f3;
+    --brass:#c9a35c;
+    --brass-pale:#f7eeda;
+    --paper:#f6f4ef;
+    --card:#ffffff;
+    --ink:#1a2340;
+    --ink-soft:#5a6178;
+    --line:#e3dfd4;
+    --caution:#a8452e;
+    --caution-pale:#f8e9e4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+  }
+  a{color:inherit;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 6vw;}
+
+  header.site{
+    background:var(--navy);
+    color:#fff;
+    padding:22px 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .logo{font-family:'Fraunces',serif;font-size:22px;font-weight:600;}
+  .logo span{color:var(--teal);}
+  header.site nav a{text-decoration:none;color:#cfd3e2;font-size:14px;margin-left:28px;}
+  header.site nav a:hover{color:#fff;}
+
+  .crumb{
+    padding:20px 6vw 0;
+    font-size:13px;
+  }
+  .crumb a{color:var(--teal-deep);text-decoration:none;font-weight:600;}
+  .crumb a:hover{text-decoration:underline;}
+  .crumb span{color:var(--ink-soft);}
+
+  .hero{
+    padding:28px 6vw 40px;
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:36px;
+    max-width:1000px;
+    margin:0 auto;
+    align-items:start;
+  }
+  .hero .shot{
+    background:#efece3;
+    border-radius:6px;
+    padding:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero .shot img{width:100%;height:auto;display:block;}
+  .hero .shot span{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:44px;
+    color:var(--teal);
+    letter-spacing:-0.02em;
+  }
+  .hero .shot::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:6px;
+  }
+  .hero .eyebrow{
+    color:var(--teal-deep);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .hero h1{
+    font-size:clamp(28px,3.6vw,38px);
+    color:var(--navy);
+    line-height:1.15;
+  }
+  .hero .sub{
+    margin-top:8px;
+    font-size:16px;
+    color:var(--ink-soft);
+  }
+  .facts{
+    margin-top:18px;
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    font-size:13px;
+  }
+  .facts div{color:var(--ink-soft);}
+  .facts b{display:block;color:var(--navy);font-size:15px;font-weight:600;}
+
+  section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 6vw;
+  }
+  .band{padding:36px 6vw;}
+  .band.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+  .lede{font-size:16px;color:var(--ink-soft);max-width:62ch;}
+
+  .safety{
+    background:var(--caution-pale);
+    border:1px solid #e6bfae;
+    border-radius:6px;
+    padding:22px 24px;
+    margin-top:28px;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .safety h2{font-size:17px;color:var(--caution);margin-bottom:10px;}
+  .safety ul{margin:0;padding-left:20px;font-size:14.5px;color:#5a3226;}
+  .safety li{margin-bottom:6px;}
+  .safety li:last-child{margin-bottom:0;}
+
+  h2.section-title{
+    font-size:26px;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .section-intro{color:var(--ink-soft);font-size:15px;margin-bottom:26px;max-width:62ch;}
+
+  .use-block{
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--line);
+  }
+  .use-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .use-block h3{
+    font-size:19px;
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:16px;
+  }
+  .use-block h3 .dot{
+    width:9px;height:9px;border-radius:50%;background:var(--teal);flex-shrink:0;
+  }
+  ol.steps{
+    margin:0;
+    padding:0;
+    list-style:none;
+    counter-reset:step;
+  }
+  ol.steps li{
+    counter-increment:step;
+    position:relative;
+    padding-left:38px;
+    margin-bottom:12px;
+    font-size:15px;
+    color:var(--ink);
+  }
+  ol.steps li:last-child{margin-bottom:0;}
+  ol.steps li::before{
+    content:counter(step);
+    position:absolute;
+    left:0;top:0;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--brass-pale);
+    color:var(--navy);
+    font-size:12.5px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rate{
+    display:inline-block;
+    background:var(--teal-pale);
+    color:var(--teal-deep);
+    font-weight:600;
+    padding:1px 7px;
+    border-radius:4px;
+    font-size:13.5px;
+  }
+
+  table.spec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+    max-width:640px;
+  }
+  table.spec tr{border-bottom:1px solid var(--line);}
+  table.spec tr:last-child{border-bottom:none;}
+  table.spec td{padding:11px 4px;}
+  table.spec td:first-child{color:var(--ink-soft);width:44%;}
+  table.spec td:last-child{color:var(--navy);font-weight:500;}
+
+  .compat{
+    margin-top:22px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+    max-width:62ch;
+  }
+  .compat b{color:var(--navy);}
+
+  .download{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    background:var(--navy);
+    color:#fff;
+    border-radius:8px;
+    padding:28px 30px;
+    margin:44px auto 0;
+    max-width:1000px;
+  }
+  .download h3{color:#fff;font-size:19px;margin-bottom:6px;}
+  .download p{margin:0;color:#c7cbdd;font-size:14px;}
+  .download a.btn{
+    background:var(--teal);
+    color:var(--navy);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    padding:12px 22px;
+    border-radius:5px;
+    white-space:nowrap;
+  }
+  .download a.btn:hover{background:#68c0ba;}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:28px 6vw 44px;
+    font-size:13px;
+    color:var(--ink-soft);
+    max-width:1000px;
+    margin:44px auto 0;
+  }
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:120px 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="logo">Gellings<span>.</span></div>
+  <nav>
+    <a href="https://www.gellings.im/">gellings.im</a>
+    <a href="index.html">Guides</a>
+  </nav>
+</header>
+
+<div class="crumb"><a href="index.html">Product Guides</a> <span>/ Flash Pro Bleach Spray</span> <span>· <a href="https://www.gellings.im/prod_cat/C_specialist-house-keeping_14.asp">shop housekeeping</a></span></div>
+
+<div class="hero">
+  <div class="shot"><img src="data:image/jpeg;base64,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" alt="Flash Pro Multisurface Cleaner With Bleach"></div>
+  <div>
+    <div class="eyebrow">Ready-to-use · 750ml</div>
+    <h1>Flash Pro Spray Cleaner With Bleach</h1>
+    <div class="sub">Cleans &amp; disinfects hard surfaces</div>
+    <div class="facts">
+      <div><b>Ready to use</b>no dilution</div>
+      <div><b>Bleach-based</b>cleans &amp; disinfects</div>
+      <div><b>Trigger spray</b>spray &amp; wipe</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <p class="lede">Flash Pro Spray Cleaner With Bleach cleans and disinfects hard surfaces in one step. Ready to use straight from the trigger bottle — no dilution needed.</p>
+
+  <div class="safety">
+    <h2>Before you start</h2>
+    <ul>
+      <li>Never mix with other chemicals, especially acidic products — this releases dangerous chlorine gas.</li>
+      <li>Ensure good ventilation when using.</li>
+      <li>Full safety information is in the product's Safety Data Sheet — ask us if you need a copy.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="band alt">
+<section style="padding:0;">
+  <h2 class="section-title">How to use it</h2>
+  <p class="section-intro">Ready to use straight from the trigger bottle — no mixing needed.</p>
+
+  <div class="use-block">
+    <h3><span class="dot"></span>Cleaning &amp; disinfecting</h3>
+    <ol class="steps">
+      <li>Spray directly onto the surface.</li>
+      <li>Wipe with a clean cloth.</li>
+      <li>Leave to air dry for full disinfection contact time.</li>
+    </ol>
+  </div>
+
+</section>
+</div>
+
+<section class="band">
+  <h2 class="section-title">Product details</h2>
+  <table class="spec">
+    <tr><td>Format</td><td>Ready-to-use trigger spray (750ml)</td></tr>
+  </table>
+  <p class="compat"><b>Suitable for:</b> hard surfaces around the home and workplace.</p>
+</section>
+
+<div class="wrap">
+<div class="download">
+  <div>
+    <h3>Want this as a printable sheet?</h3>
+    <p>Download a PDF copy to keep by the equipment or hand to staff.</p>
+  </div>
+  <a class="btn" href="flash-pro-bleach-spray.pdf" download>Download PDF</a>
+</div>
+</div>
+
+<footer>
+  Gellings · Unit 4 Kirby Farm Industrial Estate, Braddan, Isle of Man · This guide is a general how-to — always check the product label before use.
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

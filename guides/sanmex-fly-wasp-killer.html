@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanmex Fly &amp; Wasp Killer — Use Guide | Gellings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1a2340;
+    --navy-soft:#2b3660;
+    --teal:#54b2ac;
+    --teal-deep:#3a8d88;
+    --teal-pale:#e8f4f3;
+    --brass:#c9a35c;
+    --brass-pale:#f7eeda;
+    --paper:#f6f4ef;
+    --card:#ffffff;
+    --ink:#1a2340;
+    --ink-soft:#5a6178;
+    --line:#e3dfd4;
+    --caution:#a8452e;
+    --caution-pale:#f8e9e4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    margin:0;
+  }
+  a{color:inherit;}
+  .wrap{max-width:900px;margin:0 auto;padding:0 6vw;}
+
+  header.site{
+    background:var(--navy);
+    color:#fff;
+    padding:22px 6vw;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .logo{font-family:'Fraunces',serif;font-size:22px;font-weight:600;}
+  .logo span{color:var(--teal);}
+  header.site nav a{text-decoration:none;color:#cfd3e2;font-size:14px;margin-left:28px;}
+  header.site nav a:hover{color:#fff;}
+
+  .crumb{
+    padding:20px 6vw 0;
+    font-size:13px;
+  }
+  .crumb a{color:var(--teal-deep);text-decoration:none;font-weight:600;}
+  .crumb a:hover{text-decoration:underline;}
+  .crumb span{color:var(--ink-soft);}
+
+  .hero{
+    padding:28px 6vw 40px;
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:36px;
+    max-width:1000px;
+    margin:0 auto;
+    align-items:start;
+  }
+  .hero .shot{
+    background:#efece3;
+    border-radius:6px;
+    padding:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .hero .shot img{width:100%;height:auto;display:block;}
+  .hero .shot span{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:44px;
+    color:var(--teal);
+    letter-spacing:-0.02em;
+  }
+  .hero .shot::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:6px;
+  }
+  .hero .eyebrow{
+    color:var(--teal-deep);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .hero h1{
+    font-size:clamp(28px,3.6vw,38px);
+    color:var(--navy);
+    line-height:1.15;
+  }
+  .hero .sub{
+    margin-top:8px;
+    font-size:16px;
+    color:var(--ink-soft);
+  }
+  .facts{
+    margin-top:18px;
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    font-size:13px;
+  }
+  .facts div{color:var(--ink-soft);}
+  .facts b{display:block;color:var(--navy);font-size:15px;font-weight:600;}
+
+  section{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 6vw;
+  }
+  .band{padding:36px 6vw;}
+  .band.alt{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+  .lede{font-size:16px;color:var(--ink-soft);max-width:62ch;}
+
+  .safety{
+    background:var(--caution-pale);
+    border:1px solid #e6bfae;
+    border-radius:6px;
+    padding:22px 24px;
+    margin-top:28px;
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .safety h2{font-size:17px;color:var(--caution);margin-bottom:10px;}
+  .safety ul{margin:0;padding-left:20px;font-size:14.5px;color:#5a3226;}
+  .safety li{margin-bottom:6px;}
+  .safety li:last-child{margin-bottom:0;}
+
+  h2.section-title{
+    font-size:26px;
+    color:var(--navy);
+    margin-bottom:6px;
+  }
+  .section-intro{color:var(--ink-soft);font-size:15px;margin-bottom:26px;max-width:62ch;}
+
+  .use-block{
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom:1px solid var(--line);
+  }
+  .use-block:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .use-block h3{
+    font-size:19px;
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:16px;
+  }
+  .use-block h3 .dot{
+    width:9px;height:9px;border-radius:50%;background:var(--teal);flex-shrink:0;
+  }
+  ol.steps{
+    margin:0;
+    padding:0;
+    list-style:none;
+    counter-reset:step;
+  }
+  ol.steps li{
+    counter-increment:step;
+    position:relative;
+    padding-left:38px;
+    margin-bottom:12px;
+    font-size:15px;
+    color:var(--ink);
+  }
+  ol.steps li:last-child{margin-bottom:0;}
+  ol.steps li::before{
+    content:counter(step);
+    position:absolute;
+    left:0;top:0;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--brass-pale);
+    color:var(--navy);
+    font-size:12.5px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .rate{
+    display:inline-block;
+    background:var(--teal-pale);
+    color:var(--teal-deep);
+    font-weight:600;
+    padding:1px 7px;
+    border-radius:4px;
+    font-size:13.5px;
+  }
+
+  table.spec{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+    max-width:640px;
+  }
+  table.spec tr{border-bottom:1px solid var(--line);}
+  table.spec tr:last-child{border-bottom:none;}
+  table.spec td{padding:11px 4px;}
+  table.spec td:first-child{color:var(--ink-soft);width:44%;}
+  table.spec td:last-child{color:var(--navy);font-weight:500;}
+
+  .compat{
+    margin-top:22px;
+    font-size:14.5px;
+    color:var(--ink-soft);
+    max-width:62ch;
+  }
+  .compat b{color:var(--navy);}
+
+  .download{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+    background:var(--navy);
+    color:#fff;
+    border-radius:8px;
+    padding:28px 30px;
+    margin:44px auto 0;
+    max-width:1000px;
+  }
+  .download h3{color:#fff;font-size:19px;margin-bottom:6px;}
+  .download p{margin:0;color:#c7cbdd;font-size:14px;}
+  .download a.btn{
+    background:var(--teal);
+    color:var(--navy);
+    text-decoration:none;
+    font-weight:700;
+    font-size:14px;
+    padding:12px 22px;
+    border-radius:5px;
+    white-space:nowrap;
+  }
+  .download a.btn:hover{background:#68c0ba;}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:28px 6vw 44px;
+    font-size:13px;
+    color:var(--ink-soft);
+    max-width:1000px;
+    margin:44px auto 0;
+  }
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:120px 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="logo">Gellings<span>.</span></div>
+  <nav>
+    <a href="https://www.gellings.im/">gellings.im</a>
+    <a href="index.html">Guides</a>
+  </nav>
+</header>
+
+<div class="crumb"><a href="index.html">Product Guides</a> <span>/ Sanmex Fly &amp; Wasp Killer</span> <span>· <a href="https://www.gellings.im/prod_cat/C_specialist-cleaning-industrial_392.asp">shop specialist cleaning</a></span></div>
+
+<div class="hero">
+  <div class="shot"><img src="data:image/jpeg;base64,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" alt="Sanmex Fly & Wasp Killer"></div>
+  <div>
+    <div class="eyebrow">Insecticide aerosol · 400ml</div>
+    <h1>Sanmex Fly &amp; Wasp Killer</h1>
+    <div class="sub">Fast-acting spray for wasps, flies &amp; midges</div>
+    <div class="facts">
+      <div><b>Extremely flammable</b>keep away from ignition</div>
+      <div><b>3 sec burst</b>treats a 30m³ room</div>
+      <div><b>Not for</b>soft furnishings, carpets, polished surfaces</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <p class="lede">Sanmex Fly & Wasp Killer is a fast-acting insecticide aerosol for wasps, midges and flies (including mosquitoes) in domestic and light commercial situations. Approved for use as directed under the Control of Pesticides Regulations 1986.</p>
+
+  <div class="safety">
+    <h2>Before you start</h2>
+    <ul>
+      <li><b>Extremely flammable aerosol.</b> Keep away from heat, sparks, open flames and hot surfaces — no smoking nearby.</li>
+      <li>Pressurised container — do not pierce or burn, even after use. Protect from sunlight; do not expose to temperatures over 50°C.</li>
+      <li>Do not spray on an open flame or other ignition source.</li>
+      <li>Very toxic to aquatic life — avoid contaminating water courses.</li>
+      <li>Contains Permethrin — may cause an allergic reaction in sensitive individuals.</li>
+      <li>Use only as an insecticide, as directed.</li>
+    </ul>
+  </div>
+</section>
+
+<div class="band alt">
+<section style="padding:0;">
+  <h2 class="section-title">How to use it</h2>
+  <p class="section-intro">Ready to use — no dilution needed.</p>
+
+  <div class="use-block">
+    <h3><span class="dot"></span>Treating a room or insects directly</h3>
+    <ol class="steps">
+      <li>Shake the can well before use.</li>
+      <li>Hold the can upright and spray away from your body into the air, or directly at insects.</li>
+      <li>A 3 second burst treats an average-sized room (30 cubic metres).</li>
+      <li>Avoid direct contact with soft furnishings, carpets and polished surfaces.</li>
+      <li>Do not use directly on clothing or bedding.</li>
+    </ol>
+  </div>
+
+</section>
+</div>
+
+<section class="band">
+  <h2 class="section-title">Product details</h2>
+  <table class="spec">
+    <tr><td>Format</td><td>Ready-to-use aerosol (400ml)</td></tr>
+    <tr><td>Active ingredients</td><td>Permethrin 0.03% · Tetramethrin 0.14%</td></tr>
+  </table>
+  <p class="compat"><b>Suitable for:</b> wasps, midges and flies in domestic situations. Avoid soft furnishings, carpets and polished surfaces.</p>
+</section>
+
+<div class="wrap">
+<div class="download">
+  <div>
+    <h3>Want this as a printable sheet?</h3>
+    <p>Download a PDF copy to keep by the equipment or hand to staff.</p>
+  </div>
+  <a class="btn" href="sanmex-fly-wasp-killer.pdf" download>Download PDF</a>
+</div>
+</div>
+
+<footer>
+  Gellings · Unit 4 Kirby Farm Industrial Estate, Braddan, Isle of Man · This guide is a general how-to — always check the product label before use.
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
